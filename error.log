@@ -1,0 +1,77 @@
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 15:57:16"}
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 15:58:05"}
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 15:58:33"}
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 15:58:33"}
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 15:58:34"}
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 15:58:45"}
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 16:00:57"}
+{"level":"error","message":"Username or password is not defined. Please check your environment variables (APP_USERNAME, APP_PASSWORD) or pass them as arguments.","service":"user-service","timestamp":"2025-10-06 16:03:45"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-06 16:05:15"}
+{"level":"error","message":"Test \"should navigate to Score Prediction\" failed. Capturing screenshot...","service":"user-service","timestamp":"2025-10-06 17:41:04"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-06 17:41:07"}
+{"level":"error","message":"Test \"should open chat and send a message\" failed. Capturing screenshot...","service":"user-service","timestamp":"2025-10-06 17:41:07"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-06 17:41:45"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-07 12:17:46"}
+{"level":"error","message":"❌ Operation failed: The selected DOB doesn't meet the age criteria set for this class!! Eligible only for 01/10/2017 to 30/09/2019 For Respective Classes","service":"user-service","timestamp":"2025-10-07 13:20:01"}
+{"level":"error","message":"❌ Operation failed: The selected DOB doesn't meet the age criteria set for this class!! Eligible only for 01/10/2017 to 30/09/2019 For Respective Classes","service":"user-service","timestamp":"2025-10-07 13:20:38"}
+{"level":"error","message":"❌ Operation failed: The selected DOB doesn't meet the age criteria set for this class!! Eligible only for 01/10/2017 to 30/09/2019 For Respective Classes","service":"user-service","timestamp":"2025-10-07 13:23:11"}
+{"level":"error","message":"[waitForToast] No toast appeared within the timeout.","service":"user-service","timestamp":"2025-10-07 17:50:55"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-07 17:56:48"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-07 17:57:33"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-08 16:00:34"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-08 16:00:58"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-09 13:13:39"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-10 10:13:12"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-10 10:13:12"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-10 10:13:12"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-10 10:13:12"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-10 10:13:12"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-10 10:13:12"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-14 15:27:06"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-14 15:27:28"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-14 15:27:37"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-14 15:30:18"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-14 15:30:18"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-14 15:30:18"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-14 15:30:18"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-14 15:30:20"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-14 15:30:53"}
+{"level":"error","message":"Failed to locate chat opener. Capturing screenshot...","service":"user-service","timestamp":"2025-10-14 15:44:21"}
+{"level":"error","message":"Failed to locate chat opener. Capturing screenshot...","service":"user-service","timestamp":"2025-10-14 15:45:12"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-14 15:47:54"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-14 17:00:35"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-14 17:08:05"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-15 10:59:28"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 11:22:03"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 11:22:03"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 11:22:03"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 11:22:03"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 11:22:03"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 11:22:03"}
+{"level":"error","message":"Failed to locate chat opener. Capturing screenshot...","service":"user-service","timestamp":"2025-10-15 11:22:38"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 11:22:40"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-15 11:23:31"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 12:06:13"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 12:06:13"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 12:06:13"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 12:06:13"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 12:06:13"}
+{"error":{},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-15 12:06:13"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-15 12:06:54"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-15 12:24:30"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-22 12:52:53"}
+{"level":"error","message":"❌ Operation failed: Student already exists, Please try with different Student.","service":"user-service","timestamp":"2025-10-22 13:06:16"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-22 15:10:44"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-22 15:10:54"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-22 15:12:10"}
+{"level":"error","message":"❌ Operation failed: Pending Fees are not Available.","service":"user-service","timestamp":"2025-10-22 17:51:54"}
+{"level":"error","message":"❌ Operation failed: Pending Fees are not Available.","service":"user-service","timestamp":"2025-10-22 17:54:24"}
+{"level":"error","message":"❌ Operation failed: Pending Fees are not Available.","service":"user-service","timestamp":"2025-10-22 17:55:22"}
+{"level":"error","message":"❌ Operation failed: Pending Fees are not Available.","service":"user-service","timestamp":"2025-10-22 17:56:08"}
+{"level":"error","message":"❌ Operation failed: Pending Fees are not Available.","service":"user-service","timestamp":"2025-10-22 18:00:14"}
+{"level":"error","message":"❌ Operation failed: Pending Fees are not Available.","service":"user-service","timestamp":"2025-10-22 18:04:09"}
+{"level":"error","message":"❌ Operation failed: Pending Fees are not Available.","service":"user-service","timestamp":"2025-10-22 18:07:20"}
+{"level":"error","message":"❌ Operation failed: Please fill required fields","service":"user-service","timestamp":"2025-10-24 13:42:08"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-24 15:44:44"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-24 16:39:17"}
+{"error":{"name":"Error"},"level":"error","message":"An error occurred during the login process.","service":"user-service","timestamp":"2025-10-24 16:39:17"}

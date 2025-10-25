@@ -1,0 +1,35 @@
+{
+  "servers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@executeautomation/playwright-mcp-server"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {},
+      "type": "stdio"
+    },
+    "hello": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-hello@latest"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {}
+    },
+    "mongo-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-mongo-server",
+        "mongodb://localhost:27017/SoftopDemo"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {},
+      "type": "stdio"
+    }
+  },
+  "inputs": []
+}
