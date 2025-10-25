@@ -91,7 +91,7 @@ test.describe('Career testing', () => {
         });
     });
 
-    test('career listing', async ({ page }) => {
+    test('career listing create', async ({ page }) => {
         logger.info('navigating career listing  ...');
 
         await navigateToCareerMenu(page);
@@ -173,5 +173,38 @@ test.describe('Career testing', () => {
             await statusDropdown.selectOption({ value: '1' });
             await expect(statusDropdown).toHaveValue('1');
         });
+    });
+
+    test('career listing checking', async ({ page }) => {
+        logger.info('navigating career listing  ...');
+        await navigateToCareerMenu(page);
+        logger.info('clicking career listing  ...');
+        const careerListing = page.locator('div.tree-section:has-text("Career Listings")').first();
+        await careerListing.waitFor({ state: 'visible', timeout: 10000 });
+        await careerListing.click();
+        logger.info('career listing clicked  ...');
+
+        await test.step('verifying created job title in listing', async () => {
+    logger.info('Verifying created job title in listing ...');
+
+    // 1. Wait for the table data to appear (your previous fix, which is correct)
+    const tableWrapper = page.locator('div.tablewrapper');
+    await tableWrapper.locator('tr.mainrow').first().waitFor({ timeout: 10000 });
+    logger.info('Table data has loaded.');
+
+    // --- THIS IS THE FIX ---
+    // 2. Instead of a general search, specifically find the FIRST row that contains the text.
+    // This combines the "find by text" and "pick the first one" strategies.
+    const jobRow = tableWrapper.locator('tr.mainrow', { hasText: 'SOFTWARE ENGINEER' }).first();
+
+    // 3. Assert that this specific first matching row is visible.
+    await expect(jobRow).toBeVisible();
+    logger.info('Verified created job title in the first matching row.');
+
+    // 4. (Optional but recommended) You can further assert the exact text of the cell
+    // to ensure it's not matching "Software Engineer (Junior)".
+    const jobTitleCell = jobRow.getByRole('cell', { name: 'SOFTWARE ENGINEER' });
+    await expect(jobTitleCell).toBeVisible();
 });
+    });
 });
