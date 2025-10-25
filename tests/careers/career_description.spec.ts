@@ -90,4 +90,88 @@ test.describe('Career testing', () => {
             logger.info('Save button clicked.');
         });
     });
+
+    test('career listing', async ({ page }) => {
+        logger.info('navigating career listing  ...');
+
+        await navigateToCareerMenu(page);
+        logger.info('clicking career listing  ...');
+
+        const careerListing = page.locator('div.tree-section:has-text("Career Listing")').first();
+        await careerListing.waitFor({ state: 'visible', timeout: 10000 });
+        await careerListing.click();
+
+        logger.info('career listing clicked  ...');
+
+        logger.info('clicking create button', async () => {
+            logger.info('Clicking the Create button...');
+            const createButton = page.getByTitle('Create').first();
+            await createButton.waitFor({ state: 'visible', timeout: 10000 });
+            await createButton.click();
+        });
+
+        logger.info('selecting type of job dropdown', async () => {
+            logger.info('Selecting type of job dropdown ...');
+            const typeOfJobDropdown = page.locator('select[ng-model="CRUDModel.ViewModel.TypeOfJob"]');;
+            await typeOfJobDropdown.waitFor({ state: 'visible', timeout: 10000 });
+            await typeOfJobDropdown.selectOption({ value: '1' });
+            await expect(typeOfJobDropdown).toHaveValue('1');
+        });
+
+        logger.info('filling job title', async () => {
+            logger.info('Filling job title ...');
+            const jobTitleInput = page.locator('input[ng-model="CRUDModel.ViewModel.JobTitle"]');;
+            await jobTitleInput.waitFor({ state: 'visible' });
+            await jobTitleInput.fill('Junior Developer');
+            await expect(jobTitleInput).toHaveValue('Junior Developer');
+        });
+
+        logger.info('selecting designation', async () => {
+            logger.info('Selecting designation ...');
+            const designationDropdown = page.locator('select[ng-model="CRUDModel.ViewModel.JobTitle"]');;
+            await designationDropdown.waitFor({ state: 'visible', timeout: 10000 });
+            await designationDropdown.selectOption({ value: '1' });
+            await expect(designationDropdown).toHaveValue('1');
+        });
+
+        logger.info('selecting department', async () => {
+            logger.info('Selecting department ...');
+            const departmentDropdown = page.locator('select[ng-model="CRUDModel.ViewModel.Department"]');;
+            await departmentDropdown.waitFor({ state: 'visible', timeout: 10000 });
+            await departmentDropdown.selectOption({ value: '1' });
+            await expect(departmentDropdown).toHaveValue('1');
+        });
+
+        logger.info('inputing job description', async () => {
+            logger.info('Inputing job description ...');
+            const jobDescriptionInput = page.locator('textarea[ng-model="CRUDModel.ViewModel.JobDescription"]');;
+            await jobDescriptionInput.waitFor({ state: 'visible' });
+            await jobDescriptionInput.fill('This is a job description for Junior Developer position.');
+            await expect(jobDescriptionInput).toHaveValue('This is a job description for Junior Developer position.');
+        });
+
+        logger.info('inputing job details', async () => {
+            logger.info('Inputing job details ...');
+            const jobDetailsInput = page.locator('textarea[ng-model="CRUDModel.ViewModel.JobDetail"]');;
+            await jobDetailsInput.waitFor({ state: 'visible' });
+            await jobDetailsInput.fill('Detailed information about the Junior Developer role and responsibilities.');
+            await expect(jobDetailsInput).toHaveValue('Detailed information about the Junior Developer role and responsibilities.');
+        });
+
+        logger.info('inputing publish date', async () => {
+            logger.info('Inputing publish date ...');
+            const publishDateInput = page.locator('input[ng-model="CRUDModel.ViewModel.PublishDateString"]');;
+            await publishDateInput.waitFor({ state: 'visible' });
+            await publishDateInput.fill('06/15/2024');
+            await expect(publishDateInput).toHaveValue('06/15/2024');
+        });
+
+        logger.info('selecting status', async () => {
+            logger.info('Selecting status ...');
+            const statusDropdown = page.locator('select[ng-model="CRUDModel.ViewModel.JobStatus" ]');;
+            await statusDropdown.waitFor({ state: 'visible', timeout: 10000 });
+            await statusDropdown.selectOption({ value: '1' });
+            await expect(statusDropdown).toHaveValue('1');
+        });
+});
 });

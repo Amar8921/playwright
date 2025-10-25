@@ -5857,3 +5857,156 @@
 {"level":"info","message":"Starting HR employee editing test...","service":"user-service","timestamp":"2025-10-25 13:26:50"}
 {"level":"info","message":"Navigating to HR Employee menu...","service":"user-service","timestamp":"2025-10-25 13:26:50"}
 {"level":"info","message":"Selecting HR and Payroll...","service":"user-service","timestamp":"2025-10-25 13:26:51"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:37:57"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:37:57"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:37:57"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:38:01"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:38:02"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:38:03"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:38:03"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:38:03"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:38:03"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:38:04"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:38:05"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:38:05"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:38:05"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:40:34"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:40:34"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:40:34"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:40:34"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:40:35"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:40:35"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:40:35"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:40:35"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:40:35"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:40:36"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:40:37"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:40:37"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:40:37"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:40:37"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:40:37"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:41:24"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:41:24"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:41:24"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:41:25"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:41:25"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:41:26"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:41:26"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:41:26"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:41:26"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:41:27"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:41:27"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:41:27"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:41:27"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:41:27"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:41:27"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:42:05"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:42:05"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:42:05"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:42:06"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:42:06"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:42:07"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:42:07"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:42:07"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:42:07"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:42:08"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:42:08"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:42:08"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:42:08"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:42:08"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:42:08"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:42:49"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:42:49"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:42:49"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:42:50"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:42:50"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:42:51"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:42:51"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:42:51"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:42:51"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:42:52"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:42:52"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:42:52"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:42:52"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:42:52"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:42:52"}
+{"level":"info","message":"filling job title","service":"user-service","timestamp":"2025-10-25 17:42:52"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:43:40"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:43:40"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:43:40"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:43:40"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:43:41"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:43:42"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:43:42"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:43:42"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:43:42"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:43:42"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:43:42"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:43:42"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:43:43"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:43:43"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:43:43"}
+{"level":"info","message":"filling job title","service":"user-service","timestamp":"2025-10-25 17:43:43"}
+{"level":"info","message":"selecting designation","service":"user-service","timestamp":"2025-10-25 17:43:43"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:45:28"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:45:28"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:45:28"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:45:29"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:45:29"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:45:30"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:45:30"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:45:30"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:45:30"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"filling job title","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"selecting designation","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"selecting department","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"inputing job description","service":"user-service","timestamp":"2025-10-25 17:45:31"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:47:02"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:47:02"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:47:02"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:47:02"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:47:02"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:47:03"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:47:03"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:47:03"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:47:03"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"filling job title","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"selecting designation","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"selecting department","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"inputing job description","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"inputing job details","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"inputing publish date","service":"user-service","timestamp":"2025-10-25 17:47:04"}
+{"level":"info","message":"Logging in...","service":"user-service","timestamp":"2025-10-25 17:48:07"}
+{"level":"info","message":"Starting login process...","service":"user-service","timestamp":"2025-10-25 17:48:07"}
+{"level":"info","message":"Navigating to login page: http://192.168.29.100:940//Account/Login?ReturnUrl=%2F%3Flanguage%3Den","service":"user-service","timestamp":"2025-10-25 17:48:07"}
+{"level":"info","message":"Waiting for post-login UI or context selection...","service":"user-service","timestamp":"2025-10-25 17:48:08"}
+{"level":"info","message":"Context selection detected. Clicking Select button #1...","service":"user-service","timestamp":"2025-10-25 17:48:08"}
+{"level":"info","message":"Login process completed successfully.","service":"user-service","timestamp":"2025-10-25 17:48:09"}
+{"level":"info","message":"Login successful.","service":"user-service","timestamp":"2025-10-25 17:48:09"}
+{"level":"info","message":"navigating career listing  ...","service":"user-service","timestamp":"2025-10-25 17:48:09"}
+{"level":"info","message":"Navigating to Career menu...","service":"user-service","timestamp":"2025-10-25 17:48:09"}
+{"level":"info","message":"Selecting Careers node...","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"clicked Careers node","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"clicking career listing  ...","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"career listing clicked  ...","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"clicking create button","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"selecting type of job dropdown","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"filling job title","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"selecting designation","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"selecting department","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"inputing job description","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"inputing job details","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"inputing publish date","service":"user-service","timestamp":"2025-10-25 17:48:10"}
+{"level":"info","message":"selecting status","service":"user-service","timestamp":"2025-10-25 17:48:10"}
