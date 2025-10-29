@@ -3,6 +3,7 @@ import { login } from '../helpers/login';
 import logger from '../helpers/utils/logger';
 import { waitForToast } from '../helpers/utils/ui';
 import { log } from 'console';
+import { navigateToMenu } from '../helpers/actions/common_actions';
 
 
 test.describe('Attendence', () => {
@@ -17,32 +18,11 @@ test.describe('Attendence', () => {
     test('should attendence checking', async ({ page }) => {
         logger.info('Starting attendence checking...');
 
-        await test.step('Navigate to attendence', async () => {
-            logger.info('Navigating to attendence menu...');
-            const searchBox = page.getByRole('textbox', { name: 'Search Menu' });
-            await searchBox.waitFor({ state: 'visible', timeout: 15000 });
-            await searchBox.click();
-            await searchBox.fill('attendance');
-            await searchBox.press('Enter');
-        });
-
-        await test.step('selecting school', async () => {
-            logger.info('Selecting school...');
-            const schoolsNode = page.locator('.tree-section', { hasText: 'Schools' }).first();
-            await schoolsNode.waitFor({ state: 'visible', timeout: 10000 });
-            await schoolsNode.click();
-
-            logger.info('selecting attendence menu...');
-            const feeMenu = page.locator('div.tree-section:has-text("Attendances")').first();
-            await feeMenu.waitFor({ state: 'visible', timeout: 10000 });
-            await feeMenu.click();
-
-            logger.info('Clicking "Class Wise Attendance"...');
-            // The best way is to locate the div.tree-content that contains the span with the text
-            const classWiseAttendanceItem = page.locator('div.tree-content', { hasText: 'Class Wise Attendance' }).first();
-            await classWiseAttendanceItem.waitFor({ state: 'visible', timeout: 10000 });
-            await classWiseAttendanceItem.click();
-            logger.info('"Class Wise Attendance" clicked.');
+        await test.step('Navigate to Attendence menu', async () => {
+            logger.info('Navigating to Attendence menu...');
+            await navigateToMenu(page, ['attend', 'Attendance', 'Student Attendance']);
+            logger.info('Navigation to Attendence menu successful.');
+        
 
             logger.info('Filling class field...');
             const classDropdown = page.locator('[ng-model="selectedClass"]');

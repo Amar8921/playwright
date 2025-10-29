@@ -246,7 +246,6 @@ test.describe('Lesson plan', () => {
     });
     });
     
-
     test('create lesson outcome', async ({ page }) => {
         logger.info('creating lesson outcome  ...');
 
@@ -270,13 +269,13 @@ test.describe('Lesson plan', () => {
         });
 
         await test.step('Check Is Active', async () => {
-        await checkIsActiveCheckbox(page);
-    });
+            await checkIsActiveCheckbox(page);
+        });
 
         await test.step('Save lesson outcome', async () => {
-        await clickSaveButton(page);
+            await clickSaveButton(page);
+        });
     });
-});
 
     test('create leeson objective', async ({ page }) => {
         logger.info('creating lesson objective  ...');
@@ -304,6 +303,35 @@ test.describe('Lesson plan', () => {
         await test.step('Save lesson objective', async () => {
             await clickSaveButton(page);    
             logger.info('Lesson objective saved successfully.');
+        });
+    });
+
+    test('Lesson plan report', async ({ page }) => {
+        logger.info('Generating Lesson Plan report...');
+        await test.step('Navigate to Lesson Plan Report menu', async () => {
+            await navigateToMenu(page, ['lesson', 'Reports', 'Schools Reports','Lesson Plan']);
+            });
+        await test.step('Filling report filters', async () => {
+            await test.step('Selecting Class from dropdown', async () => {
+                logger.info('Selecting Section...');
+                const classDropdown = page.locator('[ng-model="ParameterModel.ClassID"]');
+                await classDropdown.getByLabel('Select box select').click();
+                const classOption = page.locator('.ui-select-choices-row-inner', { hasText: 'Class 1' }).first();
+                await classOption.click();
+                logger.info('Verifying Section selection...');
+                await expect(classDropdown.locator('.select2-chosen', { hasText: 'Class 1' })).toBeVisible();
+            });
+
+            await test.step('selecting section', async () => {
+                logger.info('Selecting Section...');
+                const sectionDropdown = page.locator('[ng-model="ParameterModel.SectionID"]');
+                await sectionDropdown.getByLabel('Select box select').click();
+                const sectionOption = page.locator('.ui-select-choices-row-inner', { hasText: 'MA' }).first();
+                await sectionOption.click();
+                logger.info('Verifying Section selection...');
+                await expect(sectionDropdown.locator('.select2-chosen', { hasText: 'MA' })).toBeVisible();
+            });
+
         });
     });
 });
