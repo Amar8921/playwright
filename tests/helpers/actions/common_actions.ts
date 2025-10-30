@@ -3,9 +3,15 @@ import logger from '../utils/logger';
 
 export async function clickSaveButton(page: Page) {
   logger.info('Clicking Save button...');
-  const saveButton = page.getByTitle('Save').first();
+  
+  // Select only the <a> element that has title="Save" and contains text "Save" exactly
+  const saveButton = page.locator('a[title="Save"] span:text-is("Save")').first();
+  
   await expect(saveButton).toBeVisible({ timeout: 10000 });
-  await saveButton.click();
+  
+  // Click its parent <a>, not the span itself
+  await saveButton.locator('xpath=..').click();
+  
   logger.info('Save button clicked successfully.');
 }
 
