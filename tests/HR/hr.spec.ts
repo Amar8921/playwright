@@ -4,6 +4,7 @@ import logger from '../helpers/utils/logger';
 import { waitForToast } from '../helpers/utils/ui';
 import { navigateToEmployeeMenu } from '../helpers/navigation/hr_navigation';
 import { log } from 'console';
+import { clickCreateButton, clickViewReportButton, navigateToMenu, verifyReportVisible } from '../helpers/actions/common_actions';
 
 test.describe('HR testing', () => {
     test.beforeEach(async ({ page }) => {
@@ -15,18 +16,11 @@ test.describe('HR testing', () => {
     });
 
     test('should check hr employee editing', async ({ page }) => {
-        logger.info('Starting HR employee editing test...');
-
-        // === REFACTORED PART ===
-        // Call the single navigation function
-        await navigateToEmployeeMenu(page);
-        // =======================
-        logger.info('Selecting Employee menu...');
-        const feeMenu = page.locator('div.tree-section:has-text("Employee")').first();
-        await feeMenu.waitFor({ state: 'visible', timeout: 10000 });
-        await feeMenu.click();
-
-        logger.info('Clicked Employee menu');
+        await test.step('Navigate to Employee menu', async () => {
+            logger.info('Navigating to Employee menu...');
+            await navigateToMenu(page, ['employee', 'HR', 'Employee']);
+            logger.info('Navigation successful.');
+        } );
 
         await test.step('clicking edit button', async () => {
             logger.info('Clicking the Edit button...');
@@ -52,16 +46,15 @@ test.describe('HR testing', () => {
     test('create new employee', async ({ page }) => {
         logger.info('Starting HR create new employee test...');
 
-        // === REFACTORED PART ===
-        // Call the same navigation function again
-        await navigateToEmployeeMenu(page);
-        // =======================
+        await test.step('Navigate to Student Attendance menu', async () => {
+            logger.info('Navigating to Student Attendance menu...');
+            await navigateToMenu(page, ['employee', 'HR', 'Employee']);
+            logger.info('Navigation successful.');
+        });
 
-        await test.step('clicking create button', async () => {
-            logger.info('Clicking the Create button...');
-            const createButton = page.getByTitle('Create').first();
-            await createButton.waitFor({ state: 'visible', timeout: 10000 });
-            await createButton.click();
+        await test.step('Click Create button', async () => {
+            await clickCreateButton(page, 'Create Employee');
+            logger.info('Create Employee button clicked successfully.');
         });
         await test.step('filling employee first name and last', async () => {
             logger.info('Filling in Employee Name...');
@@ -149,12 +142,24 @@ test.describe('HR testing', () => {
         });
         await test.step('selecting branch', async () => {
             logger.info('Selecting Branch...');
+
+            // Locate the dropdown
             const branchDropdown = page.locator('select[ng-model="CRUDModel.ViewModel.Branch"]');
-            await branchDropdown.waitFor({ state: 'visible', timeout: 10000 });
-            await branchDropdown.selectOption({ value: '10004' });
-            await expect(branchDropdown).toHaveValue('10004');
-            logger.info('Branch selected.');
-        });
+
+            // Wait until it becomes visible
+            await branchDropdown.waitFor({ state: 'visible', timeout: 15000 });
+
+            // Wait until the dropdown has loaded its options (Angular can delay this
+
+            // Select the desired branch by label
+            await branchDropdown.selectOption({ label: 'Stores Madinatna' });
+
+            // Verify that the dropdown now holds the expected value
+            await expect(branchDropdown).toHaveValue('10003');
+
+            logger.info('Branch selected successfully: Stores Madinatna');
+            });
+
         await test.step('inputing date of joining', async () => {
             logger.info('Inputting Date of Joining...');
             const dojInput = page.locator('input[ng-model="CRUDModel.ViewModel.JoiningDateString"]');
@@ -170,10 +175,90 @@ test.describe('HR testing', () => {
             await expect(departmentDropdown).toHaveValue('1');
             logger.info('Department selected.');
         });
+    });
+
+    test('create employee promotion', async ({ page }) => {
+        logger.info('Starting HR create employee promotion test...');
+        await test.step('Navigate to Employee Promotion menu', async () => {
+            logger.info('Navigating to Employee Promotion menu...');
+            await navigateToMenu(page, ['employee', 'HR', 'Employee Promotion']);
+            logger.info('Navigation successful.');
+        });
+        await test.step('Click Create button', async () => {
+            await clickCreateButton(page, 'Create Employee Promotion');
+            logger.info('Create Employee Promotion button clicked successfully.');
+        });
+
+        await test.step('selecting employee', async () => {
+            logger.info('Selecting Class...');
+            const employeeDropdown = page.locator('[ng-model="CRUDModel.ViewModel.Employee"]');
+            await employeeDropdown.getByLabel('Select box select').click();
+
+            const employeeOption = page.locator('.ui-select-choices-row-inner', { hasText: 'EP1228 - ATHULSANKAR' }).first();
+            await employeeOption.click();
+            logger.info('Verifying employee selection...');
+            await expect(employeeDropdown.locator('.select2-chosen', { hasText: 'EP1228 - ATHULSANKAR' })).toBeVisible();
+            
+        }); 
+
+        await test.step('input from date', async () => {
+            logger.info('Inputting From Date...');
+            const fromDateInput = page.locator('input[ng-model="CRUDModel.ViewModel.FromdateString"]');
+            await fromDateInput.waitFor({ state: 'visible', timeout: 10000 });
+            await fromDateInput.fill('01/05/2024');
+            logger.info('From Date inputted.');
+        });
+
+        await test.step('clicking save button', async () => {
+            logger.info('Clicking the Save button...');
+            await clickCreateButton(page, 'Save');
+            logger.info('Save button clicked successfully.');
         });
 
 
-
     });
+
+    test('Employee ID Card Generation', async ({ page }) => {
+        logger.info('Starting Employee ID Card Generation test...');
+        await test.step('Navigate to Employee ID Card Generation menu', async () => {
+            logger.info('Navigating to Employee ID Card Generation menu...');
+            await navigateToMenu(page, ['employee', 'Reports','HR Reports', 'Employee ID Card']);
+            logger.info('Navigation successful.');
+        });
+
+        await test.step('select designation', async () => {
+            logger.info('Selecting Designation...');
+            const designationDropdown = page.locator('[ng-model="ParameterModel.Designation"]');
+            await designationDropdown.getByLabel('Select box select').click();
+            const designationOption = page.locator('.ui-select-choices-row-inner', { hasText: 'Accountant' }).first();
+            await designationOption.click();
+            logger.info('Verifying designation selection...');
+            await expect(designationDropdown.locator('.select2-chosen', { hasText: 'Accountant' })).toBeVisible();
+        });
+
+        await test.step('selecting employee', async () => {
+            logger.info('Selecting Employee...');
+            const employeeDropdown = page.locator('[ng-model="ParameterModel.Employee_IDs"]');
+            await employeeDropdown.getByLabel('Select box select').click();
+            const employeeOption = page.locator('.ui-select-choices-row-inner', { hasText: 'All' }).first();
+            await employeeOption.click();
+            logger.info('Verifying employee selection...');
+            await expect(employeeDropdown.locator('.select2-chosen', { hasText: 'All' })).toBeVisible();
+        });
+
+        await test.step('Clicking View Report button', async () => {
+            await clickViewReportButton(page);
+            });
+
+        //how can i veryfy the report is generated and how can i confirm the id card is visible
+
+        await test.step('Verify report is visible', async () => {
+            await verifyReportVisible(page);
+            });
+
+        
+    });
+});
+
 
 

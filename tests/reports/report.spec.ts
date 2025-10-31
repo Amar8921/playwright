@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { login } from '../helpers/login';
 import logger from '../helpers/utils/logger';
+import { clickViewReportButton, navigateToMenu, verifyReportVisible } from '../helpers/actions/common_actions';
 
 test.describe('Reports', () => {
     test.beforeEach(async ({ page }) => {
@@ -25,6 +26,82 @@ test.describe('Reports', () => {
         logger.info('Report generated successfully.');
         await page.locator('.a7 > div').click();
         logger.info('Online Exam report test completed successfully.');
+    });
+
+    test('checking staff attendance report', async ({ page }) => {
+        logger.info('Starting staff attendance report test...');
+        await navigateToMenu(page, ['staff attendance report','Reports','Mobile App Report','Staff Attendance Report'],)
+        logger.info('Navigated to Staff Attendance Report page.');
+
+        await test.step('inputing from date', async () => {
+            logger.info('Inputing From Date...');
+            const fromDateInput = page.locator('[ng-model="fromDate"]');
+            await fromDateInput.fill('06/08/2025');
+            //press enter
+            await fromDateInput.press('Enter');
+            logger.info('Verifying From Date input...');
+            await expect(fromDateInput).toHaveValue('06/08/2025');
+        });
+
+        await test.step('inputing till date', async () => {
+            logger.info('Inputing Till Date...');
+            const tillDateInput = page.locator('[ng-model="tillDate"]');
+            await tillDateInput.fill('18/09/2025');
+            //press enter
+            await tillDateInput.press('Enter');
+            logger.info('Verifying Till Date input...');
+            await expect(tillDateInput).toHaveValue('18/09/2025');
+        });
+        await test.step('selecting employee', async () => {
+            logger.info('Selecting Employee...');
+            const employeeDropdown = page.locator('[ng-model="ParameterModel.EmployeeID"]');
+            
+            // 1. Click to open the dropdown
+            await employeeDropdown.getByLabel('Select box select').click();
+
+            // 2. Wait for the options list to appear
+            const firstOption = page.locator('li.ui-select-choices-row').first();
+            await firstOption.waitFor({ state: 'visible', timeout: 10000 });
+
+            // 3. Check if the "All" option exists
+            const allOption = page.getByRole('option', { name: 'EP1009 - JYOTHI  SUJESHKUMAR' });
+            const allOptionCount = await allOption.count();
+
+            // Define the locator for the selected value text, ensuring it's the visible one
+            const selectedValueLocator = employeeDropdown.locator('.select2-chosen:visible');
+
+            if (allOptionCount > 0) {
+                // --- FIX #1: The expected text should be "All" ---
+                logger.info('"All" option found. Selecting it...');
+                await allOption.click();
+                
+                // --- FIX #2: Use the unambiguous visible locator ---
+                await expect(selectedValueLocator).toHaveText('EP1009 - JYOTHI  SUJESHKUMAR');
+            } else {
+                // This block handles the 'staging' environment
+                logger.info('"All" option not found. Selecting the first available employee...');
+                const firstEmployeeText = await firstOption.textContent();
+
+                if (!firstEmployeeText) {
+                    throw new Error("Could not get text content of the first employee option.");
+                }
+
+                await firstOption.click();
+                
+                logger.info(`Verifying selection of: ${firstEmployeeText}`);
+                // --- FIX #2 (Applied here too for consistency) ---
+                await expect(selectedValueLocator).toContainText(firstEmployeeText.trim());
+            }
+        });
+
+        await test.step('generating report', async () => {
+            logger.info('Generating Report...');
+            await clickViewReportButton(page);
+            logger.info('Report generated successfully.');
+            logger.info('verifing report visibility...');
+            await verifyReportVisible(page);
+            logger.info('Report is visible on screen.');
+        });
     });
 });
 

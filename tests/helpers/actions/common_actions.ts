@@ -23,6 +23,31 @@ export async function clickCreateButton(page: Page, title: string) {
   logger.info(`${title} button clicked successfully.`);
 }
 
+export async function clickViewReportButton(page: Page) {
+  logger.info('Clicking the "View Report" button...');
+  
+  // Locate the "View Report" button by role and label
+  const viewReportButton = page.getByRole('button', { name: 'View Report' }).first();
+  
+  // Ensure the button is visible before interacting
+  await expect(viewReportButton).toBeVisible({ timeout: 10000 });
+  
+  // Click the button
+  await viewReportButton.click();
+  
+  logger.info('"View Report" button clicked successfully.');
+}
+
+export async function verifyReportVisible(page: Page) {
+  logger.info('Verifying report visibility...');
+  const reportContainer = page.locator('#viewer_pageviewOuterContainer');
+
+  // Wait for the main container
+  await expect(reportContainer).toBeVisible({ timeout: 20000 });
+
+  logger.info('✅ Report is visible on screen.');
+}
+
 export async function checkIsActiveCheckbox(page: Page) {
   logger.info('Checking Is Active checkbox...');
   const checkbox = page.locator('input[ng-model="CRUDModel.ViewModel.IsActive"]');
